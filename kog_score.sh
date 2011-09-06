@@ -2,7 +2,7 @@
 
 FILENAME=tmp.js
 
-cd ~/Docs/Music/Kogarashi
+cd ~/Docs/Music/Kogarashi/healthyboys_asif
 pwd
 
 export PATH=$PATH:/usr/local/bin

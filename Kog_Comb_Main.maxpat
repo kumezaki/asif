@@ -55,8 +55,8 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 738.0, 647.0, 215.0, 18.0 ],
-					"text" : "~/Docs/Music/Kogarashi/kog_score.sh"
+					"patching_rect" : [ 738.0, 647.0, 309.0, 18.0 ],
+					"text" : "~/Docs/Music/Kogarashi/healthyboys_asif/kog_score.sh"
 				}
 
 			}
