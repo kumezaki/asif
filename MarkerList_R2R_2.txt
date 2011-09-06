@@ -1,0 +1,5 @@
+A, "top reset 0.0";
+B, "mid reset 8.0";
+C, "";
+D, "";
+E, "";

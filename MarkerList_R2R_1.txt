@@ -1,0 +1,5 @@
+A, "top reset 0.0";
+B, "cue 1.0";
+C, "cue 2.0";
+D, "cue 3.0 armed";
+E, "cue 4.0 armed";
