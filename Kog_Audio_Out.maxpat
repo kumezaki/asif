@@ -1,9 +1,9 @@
 {
 	"patcher" : 	{
 		"fileversion" : 1,
-		"rect" : [ 25.0, 69.0, 420.0, 292.0 ],
+		"rect" : [ 25.0, 69.0, 436.0, 353.0 ],
 		"bglocked" : 0,
-		"defrect" : [ 25.0, 69.0, 420.0, 292.0 ],
+		"defrect" : [ 25.0, 69.0, 436.0, 353.0 ],
 		"openrect" : [ 0.0, 0.0, 0.0, 0.0 ],
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -27,7 +27,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 93.5, 161.0, 219.0, 20.0 ],
+					"patching_rect" : [ 96.5, 115.0, 219.0, 20.0 ],
 					"text" : "Kog_VST_Params Kog_MasterVerb.txt"
 				}
 
@@ -40,7 +40,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 95.5, 213.0, 150.0, 20.0 ],
+					"patching_rect" : [ 115.5, 286.0, 150.0, 20.0 ],
 					"text" : "s TOSC_audio_out_meter"
 				}
 
@@ -53,8 +53,8 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 95.5, 187.0, 110.0, 20.0 ],
+					"outlettype" : [ "int" ],
+					"patching_rect" : [ 115.5, 260.0, 110.0, 20.0 ],
 					"text" : "TOSC_AudioLevel"
 				}
 
@@ -68,7 +68,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 7,
 					"outlettype" : [ "signal", "signal", "", "list", "int", "", "" ],
-					"patching_rect" : [ 44.5, 136.0, 116.0, 20.0 ],
+					"patching_rect" : [ 47.5, 90.0, 116.0, 20.0 ],
 					"save" : [ "#N", "vst~", "loaduniqueid", 0, "MasterVerb 5", ";" ],
 					"text" : "vst~ \"MasterVerb 5\""
 				}
@@ -83,7 +83,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "signal" ],
-					"patching_rect" : [ 141.5, 105.0, 219.0, 20.0 ],
+					"patching_rect" : [ 150.5, 173.0, 219.0, 20.0 ],
 					"text" : "receive~ Kog_Particles_Main_Audio_R"
 				}
 
@@ -97,7 +97,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "signal" ],
-					"patching_rect" : [ 123.5, 81.0, 217.0, 20.0 ],
+					"patching_rect" : [ 132.5, 149.0, 217.0, 20.0 ],
 					"text" : "receive~ Kog_Particles_Main_Audio_L"
 				}
 
@@ -111,7 +111,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "signal" ],
-					"patching_rect" : [ 44.5, 50.0, 190.0, 20.0 ],
+					"patching_rect" : [ 47.5, 41.0, 190.0, 20.0 ],
 					"text" : "receive~ Kog_Comb_Main_Audio"
 				}
 
@@ -122,7 +122,7 @@
 					"maxclass" : "ezdac~",
 					"numinlets" : 2,
 					"numoutlets" : 0,
-					"patching_rect" : [ 44.5, 216.0, 45.0, 45.0 ]
+					"patching_rect" : [ 47.5, 260.0, 45.0, 45.0 ]
 				}
 
 			}
@@ -131,7 +131,7 @@
 				"patchline" : 				{
 					"destination" : [ "obj-92", 0 ],
 					"hidden" : 0,
-					"midpoints" : [ 103.0, 190.0, 38.5, 190.0, 38.5, 126.0, 54.0, 126.0 ],
+					"midpoints" : [ 106.0, 144.0, 41.5, 144.0, 41.5, 80.0, 57.0, 80.0 ],
 					"source" : [ "obj-1", 0 ]
 				}
 
@@ -165,7 +165,7 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-92", 0 ],
+					"destination" : [ "obj-11", 0 ],
 					"hidden" : 0,
 					"midpoints" : [  ],
 					"source" : [ "obj-90", 0 ]
@@ -174,7 +174,25 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-92", 1 ],
+					"destination" : [ "obj-113", 0 ],
+					"hidden" : 0,
+					"midpoints" : [  ],
+					"source" : [ "obj-90", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-11", 1 ],
+					"hidden" : 0,
+					"midpoints" : [  ],
+					"source" : [ "obj-91", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-113", 0 ],
 					"hidden" : 0,
 					"midpoints" : [  ],
 					"source" : [ "obj-91", 0 ]
