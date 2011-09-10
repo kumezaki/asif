@@ -410,11 +410,11 @@
 					"fontsize" : 12.0,
 					"id" : "obj-22",
 					"maxclass" : "newobj",
-					"numinlets" : 2,
+					"numinlets" : 3,
 					"numoutlets" : 2,
 					"outlettype" : [ "signal", "bang" ],
-					"patching_rect" : [ 70.0, 534.0, 36.0, 20.0 ],
-					"text" : "line~"
+					"patching_rect" : [ 70.0, 534.0, 48.0, 20.0 ],
+					"text" : "curve~"
 				}
 
 			}

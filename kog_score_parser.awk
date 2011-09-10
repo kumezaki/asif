@@ -71,6 +71,8 @@ BEGIN {
 }
 
 {
+	gsub(/"/,"",$0)
+	
 	if (col_num == 0)
 	{
 		split($0,a)

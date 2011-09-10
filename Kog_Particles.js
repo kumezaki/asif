@@ -247,5 +247,5 @@ function rec_func()
 	var on = arguments[0];
 	if (on)
 		messnamed(gRec_msg,1);
-	messnamed(gRecLine_msg,on,on?gDur_RecLine_On:gDur_RecLine_Off);
+	messnamed(gRecLine_msg,on,on?gDur_RecLine_On:gDur_RecLine_Off,on?0.:-0.5);
 }

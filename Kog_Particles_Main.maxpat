@@ -1,9 +1,9 @@
 {
 	"patcher" : 	{
 		"fileversion" : 1,
-		"rect" : [ 610.0, 262.0, 438.0, 474.0 ],
+		"rect" : [ 1146.0, 206.0, 438.0, 474.0 ],
 		"bglocked" : 0,
-		"defrect" : [ 610.0, 262.0, 438.0, 474.0 ],
+		"defrect" : [ 1146.0, 206.0, 438.0, 474.0 ],
 		"openrect" : [ 0.0, 0.0, 0.0, 0.0 ],
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -19,6 +19,20 @@
 		"enablevscroll" : 1,
 		"devicewidth" : 0.0,
 		"boxes" : [ 			{
+				"box" : 				{
+					"fontname" : "Arial",
+					"fontsize" : 12.0,
+					"id" : "obj-8",
+					"maxclass" : "newobj",
+					"numinlets" : 0,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 102.0, 323.0, 169.0, 20.0 ],
+					"text" : "r Kog_Particles_Main_js_msg"
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"fontname" : "Arial",
 					"fontsize" : 12.0,
@@ -174,7 +188,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 113.0, 373.0, 102.0, 20.0 ],
+					"patching_rect" : [ 113.0, 388.0, 102.0, 20.0 ],
 					"text" : "loadmess update"
 				}
 
@@ -216,7 +230,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 89.0, 346.0, 141.0, 20.0 ],
+					"patching_rect" : [ 89.0, 361.0, 141.0, 20.0 ],
 					"text" : "js Kog_Particles_Main.js"
 				}
 
@@ -644,6 +658,15 @@
 					"hidden" : 0,
 					"midpoints" : [  ],
 					"source" : [ "obj-6", 1 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-16", 0 ],
+					"hidden" : 0,
+					"midpoints" : [  ],
+					"source" : [ "obj-8", 0 ]
 				}
 
 			}

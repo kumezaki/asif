@@ -52,6 +52,12 @@ function do_pulse(v,p)
 	printf "var s = 1000. * %0.3f;\n",p*0.01
 }
 
+function do_part_max_act(v,p)
+{
+	indent(v)
+	printf "messnamed(\"Kog_Particles_Main_js_msg\",\"max_active\",%d);\n",p
+}
+
 function do_part_mastervol(v,p)
 {
 	split(p,a,"/")
