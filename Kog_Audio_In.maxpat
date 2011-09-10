@@ -52,8 +52,8 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 147.0, 343.0, 211.0, 20.0 ],
-					"text" : "Kog_VST_Params Kog_TrackPlug.txt"
+					"patching_rect" : [ 147.0, 343.0, 235.0, 20.0 ],
+					"text" : "Kog_VST_Params Kog_TrackPlug.txt 103"
 				}
 
 			}
@@ -402,13 +402,13 @@
 ,
 					"patching_rect" : [ 32.0, 73.0, 91.0, 20.0 ],
 					"saved_object_attributes" : 					{
-						"default_fontface" : 0,
-						"fontface" : 0,
 						"fontsize" : 12.0,
-						"globalpatchername" : "",
+						"default_fontface" : 0,
 						"default_fontname" : "Arial",
+						"fontname" : "Arial",
 						"default_fontsize" : 12.0,
-						"fontname" : "Arial"
+						"globalpatchername" : "",
+						"fontface" : 0
 					}
 ,
 					"text" : "p TOSC_Audio"

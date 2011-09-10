@@ -1,9 +1,9 @@
 {
 	"patcher" : 	{
 		"fileversion" : 1,
-		"rect" : [ 64.0, 74.0, 1056.0, 805.0 ],
+		"rect" : [ 64.0, 74.0, 1103.0, 804.0 ],
 		"bglocked" : 0,
-		"defrect" : [ 64.0, 74.0, 1056.0, 805.0 ],
+		"defrect" : [ 64.0, 74.0, 1103.0, 804.0 ],
 		"openrect" : [ 0.0, 0.0, 0.0, 0.0 ],
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -494,7 +494,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 66.0, 322.0, 265.0, 32.0 ],
-					"text" : "cue 0 0"
+					"text" : "cue 5 0"
 				}
 
 			}
