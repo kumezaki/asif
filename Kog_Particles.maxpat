@@ -22,13 +22,26 @@
 				"box" : 				{
 					"fontname" : "Arial",
 					"fontsize" : 12.0,
+					"id" : "obj-43",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 558.0, 298.0, 157.0, 20.0 ],
+					"text" : "s #1_Kog_Part_Master_Vol"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontname" : "Arial",
+					"fontsize" : 12.0,
 					"id" : "obj-42",
 					"maxclass" : "number~",
 					"mode" : 2,
 					"numinlets" : 2,
 					"numoutlets" : 2,
 					"outlettype" : [ "signal", "float" ],
-					"patching_rect" : [ 548.0, 281.0, 56.0, 20.0 ],
+					"patching_rect" : [ 558.0, 271.0, 56.0, 20.0 ],
 					"sig" : 0.0
 				}
 
@@ -42,7 +55,7 @@
 					"numinlets" : 3,
 					"numoutlets" : 2,
 					"outlettype" : [ "signal", "bang" ],
-					"patching_rect" : [ 525.0, 254.0, 67.0, 20.0 ],
+					"patching_rect" : [ 535.0, 244.0, 67.0, 20.0 ],
 					"text" : "curve~ 0.2"
 				}
 
@@ -263,7 +276,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 431.0, 347.0, 206.0, 20.0 ],
+					"patching_rect" : [ 431.0, 362.0, 206.0, 20.0 ],
 					"text" : "send~ Kog_Particles_Main_Audio_R"
 				}
 
@@ -276,7 +289,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 414.0, 323.0, 204.0, 20.0 ],
+					"patching_rect" : [ 414.0, 338.0, 204.0, 20.0 ],
 					"text" : "send~ Kog_Particles_Main_Audio_L"
 				}
 
@@ -290,7 +303,7 @@
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 525.0, 230.0, 189.0, 20.0 ],
+					"patching_rect" : [ 535.0, 220.0, 189.0, 20.0 ],
 					"text" : "r Kog_Particles_Master_Vol_msg"
 				}
 
@@ -1106,6 +1119,15 @@
 					"hidden" : 0,
 					"midpoints" : [  ],
 					"source" : [ "obj-41", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-43", 0 ],
+					"hidden" : 0,
+					"midpoints" : [  ],
+					"source" : [ "obj-42", 1 ]
 				}
 
 			}
