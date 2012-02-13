@@ -7,6 +7,9 @@ Kog_patcher_array.push("Kog_Particles_Main.maxpat");
 var wfmr_patcher_array = new Array;
 wfmr_patcher_array.push("wfmr_main.maxpat");
 
+var oneoheight_patcher_array = new Array;
+oneoheight_patcher_array.push("108_Main.maxpat");
+
 function song(v)
 {
 	messnamed("thispatcher_msg","wclose");
@@ -18,6 +21,9 @@ function song(v)
 			break;
 		case 1:
 			open(wfmr_patcher_array);
+			break;
+		case 2:
+			open(oneoheight_patcher_array);
 			break;
 		default:
 			break;
