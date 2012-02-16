@@ -591,7 +591,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 900.0, 157.0, 150.0, 34.0 ],
+					"patching_rect" : [ 908.0, 136.0, 150.0, 34.0 ],
 					"text" : "for regenerating Kog_Comb_Score.js file"
 				}
 
@@ -605,7 +605,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 832.0, 132.0, 309.0, 18.0 ],
+					"patching_rect" : [ 840.0, 111.0, 309.0, 18.0 ],
 					"text" : "~/Docs/Music/Kogarashi/healthyboys_asif/kog_score.sh"
 				}
 
@@ -618,7 +618,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 832.0, 180.0, 62.0, 20.0 ],
+					"patching_rect" : [ 840.0, 159.0, 62.0, 20.0 ],
 					"text" : "print shell"
 				}
 
@@ -632,7 +632,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "bang" ],
-					"patching_rect" : [ 832.0, 155.0, 35.0, 20.0 ],
+					"patching_rect" : [ 840.0, 134.0, 35.0, 20.0 ],
 					"text" : "shell"
 				}
 
@@ -1033,7 +1033,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 80.0, 327.0, 265.0, 32.0 ],
-					"text" : "cue 0 0"
+					"text" : "cue 2 3"
 				}
 
 			}
@@ -1635,7 +1635,7 @@
 					"maxclass" : "panel",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 819.0, 113.0, 333.0, 99.0 ]
+					"patching_rect" : [ 827.0, 92.0, 333.0, 99.0 ]
 				}
 
 			}
