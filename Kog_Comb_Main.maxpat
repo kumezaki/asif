@@ -1,9 +1,15 @@
 {
 	"patcher" : 	{
 		"fileversion" : 1,
-		"rect" : [ 64.0, 74.0, 1173.0, 818.0 ],
+		"appversion" : 		{
+			"major" : 5,
+			"minor" : 1,
+			"revision" : 9
+		}
+,
+		"rect" : [ 64.0, 74.0, 1180.0, 827.0 ],
 		"bglocked" : 0,
-		"defrect" : [ 64.0, 74.0, 1173.0, 818.0 ],
+		"defrect" : [ 64.0, 74.0, 1180.0, 827.0 ],
 		"openrect" : [ 0.0, 0.0, 0.0, 0.0 ],
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -20,13 +26,67 @@
 		"devicewidth" : 0.0,
 		"boxes" : [ 			{
 				"box" : 				{
+					"fontname" : "Arial Bold",
+					"fontsize" : 12.0,
+					"id" : "obj-133",
+					"linecount" : 2,
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 1065.0, 497.0, 67.0, 34.0 ],
+					"text" : "Resonant Strings"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontname" : "Arial Bold",
+					"fontsize" : 12.0,
+					"id" : "obj-132",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 739.0, 379.0, 98.0, 20.0 ],
+					"text" : "Looped Buffers"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontname" : "Arial Bold",
+					"fontsize" : 12.0,
+					"id" : "obj-131",
+					"linecount" : 2,
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 259.0, 30.0, 63.0, 34.0 ],
+					"text" : "Score & Cues"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontname" : "Arial Bold",
+					"fontsize" : 12.0,
+					"id" : "obj-67",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 711.0, 31.0, 63.0, 20.0 ],
+					"text" : "Particles"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"fontname" : "Arial",
 					"fontsize" : 12.0,
 					"id" : "obj-56",
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 640.0, 639.0, 103.0, 20.0 ],
+					"patching_rect" : [ 640.0, 654.0, 103.0, 20.0 ],
 					"text" : "s Kog_Comb_Vol"
 				}
 
@@ -687,7 +747,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "signal" ],
-					"patching_rect" : [ 596.0, 367.0, 135.0, 20.0 ],
+					"patching_rect" : [ 596.0, 382.0, 135.0, 20.0 ],
 					"text" : "receive~ Kog_Audio_In"
 				}
 
@@ -715,7 +775,7 @@
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 611.0, 392.0, 228.0, 20.0 ],
+					"patching_rect" : [ 611.0, 407.0, 228.0, 20.0 ],
 					"text" : "r Kog_Comb_SpectralGate_Thresh_msg"
 				}
 
@@ -879,7 +939,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 596.0, 770.0, 177.0, 20.0 ],
+					"patching_rect" : [ 596.0, 785.0, 177.0, 20.0 ],
 					"text" : "send~ Kog_Comb_Main_Audio"
 				}
 
@@ -893,7 +953,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "signal" ],
-					"patching_rect" : [ 596.0, 417.0, 175.0, 20.0 ],
+					"patching_rect" : [ 596.0, 432.0, 175.0, 20.0 ],
 					"text" : "pfft~ Kog_SpectralGate 2048 4"
 				}
 
@@ -907,7 +967,7 @@
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 619.0, 675.0, 174.0, 20.0 ],
+					"patching_rect" : [ 619.0, 690.0, 174.0, 20.0 ],
 					"text" : "r Kog_Comb_Master_Vol_msg"
 				}
 
@@ -923,7 +983,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "float", "bang" ],
-					"patching_rect" : [ 619.0, 700.0, 50.0, 20.0 ]
+					"patching_rect" : [ 619.0, 715.0, 50.0, 20.0 ]
 				}
 
 			}
@@ -1033,7 +1093,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 80.0, 327.0, 265.0, 32.0 ],
-					"text" : "cue 2 3"
+					"text" : "cue 5 0"
 				}
 
 			}
@@ -1096,7 +1156,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "float" ],
-					"patching_rect" : [ 611.0, 751.0, 80.0, 13.0 ]
+					"patching_rect" : [ 611.0, 766.0, 80.0, 13.0 ]
 				}
 
 			}
@@ -1110,7 +1170,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 2,
 					"outlettype" : [ "signal", "float" ],
-					"patching_rect" : [ 640.0, 617.0, 56.0, 20.0 ],
+					"patching_rect" : [ 640.0, 632.0, 56.0, 20.0 ],
 					"sig" : 0.0
 				}
 
@@ -1124,7 +1184,7 @@
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 613.0, 567.0, 161.0, 20.0 ],
+					"patching_rect" : [ 613.0, 582.0, 161.0, 20.0 ],
 					"text" : "r Kog_Comb_Vol_Line_msg"
 				}
 
@@ -1136,7 +1196,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "int" ],
-					"patching_rect" : [ 664.0, 593.0, 20.0, 20.0 ]
+					"patching_rect" : [ 664.0, 608.0, 20.0, 20.0 ]
 				}
 
 			}
@@ -1149,7 +1209,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "signal" ],
-					"patching_rect" : [ 596.0, 618.0, 36.0, 20.0 ],
+					"patching_rect" : [ 596.0, 633.0, 36.0, 20.0 ],
 					"text" : "*~ 0."
 				}
 
@@ -1163,7 +1223,7 @@
 					"numinlets" : 3,
 					"numoutlets" : 2,
 					"outlettype" : [ "signal", "bang" ],
-					"patching_rect" : [ 613.0, 593.0, 47.0, 20.0 ],
+					"patching_rect" : [ 613.0, 608.0, 47.0, 20.0 ],
 					"text" : "curve~"
 				}
 
@@ -1477,7 +1537,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "int" ],
-					"patching_rect" : [ 900.0, 612.0, 20.0, 20.0 ]
+					"patching_rect" : [ 879.0, 611.0, 43.0, 43.0 ]
 				}
 
 			}
@@ -1517,7 +1577,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 543.0, 498.0, 54.0, 18.0 ],
+					"patching_rect" : [ 543.0, 513.0, 54.0, 18.0 ],
 					"text" : "open $1"
 				}
 
@@ -1531,7 +1591,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "int", "bang" ],
-					"patching_rect" : [ 543.0, 475.0, 50.0, 20.0 ]
+					"patching_rect" : [ 543.0, 490.0, 50.0, 20.0 ]
 				}
 
 			}
@@ -1544,7 +1604,7 @@
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 628.0, 492.0, 195.0, 20.0 ],
+					"patching_rect" : [ 628.0, 507.0, 195.0, 20.0 ],
 					"text" : "r Kog_Comb_Buffers_Poly_2_msg"
 				}
 
@@ -1558,7 +1618,7 @@
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 611.0, 469.0, 195.0, 20.0 ],
+					"patching_rect" : [ 611.0, 484.0, 195.0, 20.0 ],
 					"text" : "r Kog_Comb_Buffers_Poly_1_msg"
 				}
 
@@ -1600,7 +1660,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "signal" ],
-					"patching_rect" : [ 596.0, 520.0, 177.0, 20.0 ],
+					"patching_rect" : [ 596.0, 535.0, 177.0, 20.0 ],
 					"text" : "poly~ Kog_Comb_Buffers_Poly"
 				}
 
@@ -1614,7 +1674,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "signal" ],
-					"patching_rect" : [ 596.0, 724.0, 42.0, 20.0 ],
+					"patching_rect" : [ 596.0, 739.0, 42.0, 20.0 ],
 					"text" : "*~ 0.2"
 				}
 
@@ -1665,7 +1725,7 @@
 					"maxclass" : "panel",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 539.0, 354.0, 308.0, 448.0 ]
+					"patching_rect" : [ 539.0, 368.0, 308.0, 448.0 ]
 				}
 
 			}

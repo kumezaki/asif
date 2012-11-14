@@ -698,18 +698,18 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-8", 1 ],
+					"destination" : [ "obj-4", 0 ],
 					"hidden" : 0,
-					"midpoints" : [ 408.0, 458.0, 146.0, 458.0 ],
+					"midpoints" : [  ],
 					"source" : [ "obj-90", 0 ]
 				}
 
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-9", 1 ],
+					"destination" : [ "obj-4", 1 ],
 					"hidden" : 0,
-					"midpoints" : [ 439.0, 467.0, 177.0, 467.0 ],
+					"midpoints" : [  ],
 					"source" : [ "obj-91", 0 ]
 				}
 
