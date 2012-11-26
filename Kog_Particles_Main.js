@@ -15,14 +15,16 @@ function loadbang()
 		gArray[i] = 0;
 }
 
-function status(pos,v)
+function play(pos,v)
 {
 	gArray[pos] = v;
 
 	if (v == 0) update();
+	
+	messnamed("Kog_Part_Stat_"+pos,v);
 }
 
-function thresh(pos,v)
+function rec(pos,v)
 {
 	if (gArray[pos] == 0) return;
 

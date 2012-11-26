@@ -1,6 +1,12 @@
 {
 	"patcher" : 	{
 		"fileversion" : 1,
+		"appversion" : 		{
+			"major" : 5,
+			"minor" : 1,
+			"revision" : 9
+		}
+,
 		"rect" : [ 637.0, 132.0, 783.0, 670.0 ],
 		"bglocked" : 0,
 		"defrect" : [ 637.0, 132.0, 783.0, 670.0 ],

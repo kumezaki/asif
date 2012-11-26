@@ -1,5 +1,5 @@
 "cue","subcue","reset","last_subcue","arm","autobang","pulse","part_max_act","part_mastervol","part_thresh","part_spectgate_thresh","comb_mastervol","comb_volcurve","comb_spectgate_thresh","comb_clear_bufs","comb_play_loop","comb_play_seq","comb_rec_seq","comb_notes","comb_buf_speed","comb_buf_vol_0","comb_buf_vol_1","comb_buf_vol_2","comb_buf_vol_3"
-0,0,"TRUE",0,"FALSE",-1,"100.00%",1,"0./0","0/0",0,1.0,"0./0/0.",12,"1/1/1/1","0/s/s/s/s","-1/-1/-1/-1","-1/-1/-1/-1","0/0/0","1./1./1./1.","all/0./0./0./0./0./0./0./0.","all","all","all"
+0,0,"TRUE",0,"FALSE",-1,"100.00%",2,"0./0","0/0",0,1,"0./0/0.",12,"1/1/1/1","0/s/s/s/s","-1/-1/-1/-1","-1/-1/-1/-1","0/0/0","1./1./1./1.","all/0./0./0./0./0./0./0./0.","all","all","all"
 ,,,,,,,,,,,,,,,,,,,,,,,
 1,0,"FALSE",,,,,,"0.6/0","-22/-22",3,,,3,,,,,,,,,,
 ,,,,,,,,,,,,,,,,,,,,,,,

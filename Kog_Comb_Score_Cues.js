@@ -22,7 +22,7 @@ function cue(v0,v1)
 					var autobang = -1;
 					outlet(0,"set_autobang",autobang);
 					var s = 1000. * 1.000;
-					messnamed("Kog_Particles_Main_js_msg","max_active",1);
+					messnamed("Kog_Particles_Main_js_msg","max_active",2);
 					messnamed("Kog_Particles_Master_Vol_msg",0.000,0.000);
 					messnamed("Kog_Particles_Thresh_msg","thresh",0.000,0.000);
 					messnamed("Kog_Particles_SpectralGate_Thresh_msg",0.000);
@@ -55,7 +55,7 @@ function cue(v0,v1)
 					var autobang = -1;
 					outlet(0,"set_autobang",autobang);
 					var s = 1000. * 1.000;
-					messnamed("Kog_Particles_Main_js_msg","max_active",1);
+					messnamed("Kog_Particles_Main_js_msg","max_active",2);
 					messnamed("Kog_Particles_Master_Vol_msg",0.600,0.000);
 					messnamed("Kog_Particles_Thresh_msg","thresh",-22.000,-22.000);
 					messnamed("Kog_Particles_SpectralGate_Thresh_msg",3.000);
@@ -88,7 +88,7 @@ function cue(v0,v1)
 					var autobang = 30000;
 					outlet(0,"set_autobang",autobang);
 					var s = 1000. * 2.000;
-					messnamed("Kog_Particles_Main_js_msg","max_active",1);
+					messnamed("Kog_Particles_Main_js_msg","max_active",2);
 					messnamed("Kog_Particles_Master_Vol_msg",0.000,60000.000);
 					messnamed("Kog_Particles_Thresh_msg","thresh",-22.000,-22.000);
 					messnamed("Kog_Particles_SpectralGate_Thresh_msg",3.000);
@@ -113,7 +113,7 @@ function cue(v0,v1)
 					var autobang = 15000;
 					outlet(0,"set_autobang",autobang);
 					var s = 1000. * 1.900;
-					messnamed("Kog_Particles_Main_js_msg","max_active",1);
+					messnamed("Kog_Particles_Main_js_msg","max_active",2);
 					messnamed("Kog_Particles_Master_Vol_msg",0.000,60000.000);
 					messnamed("Kog_Particles_Thresh_msg","thresh",-22.000,-22.000);
 					messnamed("Kog_Particles_SpectralGate_Thresh_msg",3.000);
@@ -138,7 +138,7 @@ function cue(v0,v1)
 					var autobang = 15000;
 					outlet(0,"set_autobang",autobang);
 					var s = 1000. * 1.800;
-					messnamed("Kog_Particles_Main_js_msg","max_active",1);
+					messnamed("Kog_Particles_Main_js_msg","max_active",2);
 					messnamed("Kog_Particles_Master_Vol_msg",0.000,60000.000);
 					messnamed("Kog_Particles_Thresh_msg","thresh",-22.000,-22.000);
 					messnamed("Kog_Particles_SpectralGate_Thresh_msg",3.000);
@@ -163,7 +163,7 @@ function cue(v0,v1)
 					var autobang = -1;
 					outlet(0,"set_autobang",autobang);
 					var s = 1000. * 1.700;
-					messnamed("Kog_Particles_Main_js_msg","max_active",1);
+					messnamed("Kog_Particles_Main_js_msg","max_active",2);
 					messnamed("Kog_Particles_Master_Vol_msg",0.000,60000.000);
 					messnamed("Kog_Particles_Thresh_msg","thresh",0.000,0.000);
 					messnamed("Kog_Particles_SpectralGate_Thresh_msg",3.000);
@@ -196,7 +196,7 @@ function cue(v0,v1)
 					var autobang = -1;
 					outlet(0,"set_autobang",autobang);
 					var s = 1000. * 1.000;
-					messnamed("Kog_Particles_Main_js_msg","max_active",1);
+					messnamed("Kog_Particles_Main_js_msg","max_active",2);
 					messnamed("Kog_Particles_Master_Vol_msg",0.000,60000.000);
 					messnamed("Kog_Particles_Thresh_msg","thresh",0.000,0.000);
 					messnamed("Kog_Particles_SpectralGate_Thresh_msg",3.000);
@@ -223,7 +223,7 @@ function cue(v0,v1)
 					var autobang = -1;
 					outlet(0,"set_autobang",autobang);
 					var s = 1000. * 0.950;
-					messnamed("Kog_Particles_Main_js_msg","max_active",1);
+					messnamed("Kog_Particles_Main_js_msg","max_active",2);
 					messnamed("Kog_Particles_Master_Vol_msg",0.000,60000.000);
 					messnamed("Kog_Particles_Thresh_msg","thresh",0.000,0.000);
 					messnamed("Kog_Particles_SpectralGate_Thresh_msg",3.000);
@@ -250,7 +250,7 @@ function cue(v0,v1)
 					var autobang = 30000;
 					outlet(0,"set_autobang",autobang);
 					var s = 1000. * 0.750;
-					messnamed("Kog_Particles_Main_js_msg","max_active",1);
+					messnamed("Kog_Particles_Main_js_msg","max_active",2);
 					messnamed("Kog_Particles_Master_Vol_msg",0.500,40000.000);
 					messnamed("Kog_Particles_Thresh_msg","thresh",-22.000,-22.000);
 					messnamed("Kog_Particles_SpectralGate_Thresh_msg",3.000);
