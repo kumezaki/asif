@@ -440,8 +440,8 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 478.0, 362.0, 206.0, 20.0 ],
-					"text" : "send~ Kog_Particles_Main_Audio_R"
+					"patching_rect" : [ 478.0, 362.0, 226.0, 20.0 ],
+					"text" : "send~ #1_Kog_Particles_Main_Audio_R"
 				}
 
 			}
@@ -453,8 +453,8 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 414.0, 338.0, 204.0, 20.0 ],
-					"text" : "send~ Kog_Particles_Main_Audio_L"
+					"patching_rect" : [ 414.0, 338.0, 224.0, 20.0 ],
+					"text" : "send~ #1_Kog_Particles_Main_Audio_L"
 				}
 
 			}
