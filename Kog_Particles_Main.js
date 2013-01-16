@@ -59,6 +59,8 @@ function update()
 
 function set_blocking_dur(v)
 {
+	post("gDur_Blocking = "+v+"\n");
+
 	gDur_Blocking = v;
 }
 

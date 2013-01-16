@@ -78,6 +78,18 @@ function do_part_spectgate_thresh(v,p)
 	printf "messnamed(\"Kog_Particles_SpectralGate_Thresh_msg\",%0.3f);\n",p
 }
 
+function do_part_blockdur(v,p)
+{
+	indent(v)
+	printf "messnamed(\"Kog_Particles_Main_js_msg\",\"set_blocking_dur\",%d);\n",p
+}
+
+function do_part_curvedur(v,p)
+{
+	indent(v)
+	printf "messnamed(\"Kog_Particles_js_msg\",\"set_curve_dur\",%d);\n",p
+}
+
 function do_comb_mastervol(v,p)
 {
 	indent(v)

@@ -26,6 +26,8 @@ function cue(v0,v1)
 					messnamed("Kog_Particles_Master_Vol_msg",0.000,0.000);
 					messnamed("Kog_Particles_Thresh_msg","thresh",0.000,0.000);
 					messnamed("Kog_Particles_SpectralGate_Thresh_msg",0.000);
+					messnamed("Kog_Particles_Main_js_msg","set_blocking_dur",7000);
+					messnamed("Kog_Particles_js_msg","set_curve_dur",10000);
 					messnamed("Kog_Comb_Master_Vol_msg",1.000);
 					messnamed("Kog_Comb_Vol_Line_msg",0.000,0,0.000);
 					messnamed("Kog_Comb_SpectralGate_Thresh_msg",12.000);
@@ -59,6 +61,8 @@ function cue(v0,v1)
 					messnamed("Kog_Particles_Master_Vol_msg",0.600,0.000);
 					messnamed("Kog_Particles_Thresh_msg","thresh",-22.000,-22.000);
 					messnamed("Kog_Particles_SpectralGate_Thresh_msg",3.000);
+					messnamed("Kog_Particles_Main_js_msg","set_blocking_dur",7000);
+					messnamed("Kog_Particles_js_msg","set_curve_dur",10000);
 					messnamed("Kog_Comb_Master_Vol_msg",1.000);
 					messnamed("Kog_Comb_Vol_Line_msg",0.000,0,0.000);
 					messnamed("Kog_Comb_SpectralGate_Thresh_msg",3.000);
@@ -92,6 +96,8 @@ function cue(v0,v1)
 					messnamed("Kog_Particles_Master_Vol_msg",0.000,60000.000);
 					messnamed("Kog_Particles_Thresh_msg","thresh",-22.000,-22.000);
 					messnamed("Kog_Particles_SpectralGate_Thresh_msg",3.000);
+					messnamed("Kog_Particles_Main_js_msg","set_blocking_dur",7000);
+					messnamed("Kog_Particles_js_msg","set_curve_dur",10000);
 					messnamed("Kog_Comb_Master_Vol_msg",1.000);
 					messnamed("Kog_Comb_Vol_Line_msg",1.000,0,0.000);
 					messnamed("Kog_Comb_SpectralGate_Thresh_msg",12.000);
@@ -117,6 +123,8 @@ function cue(v0,v1)
 					messnamed("Kog_Particles_Master_Vol_msg",0.000,60000.000);
 					messnamed("Kog_Particles_Thresh_msg","thresh",-22.000,-22.000);
 					messnamed("Kog_Particles_SpectralGate_Thresh_msg",3.000);
+					messnamed("Kog_Particles_Main_js_msg","set_blocking_dur",7000);
+					messnamed("Kog_Particles_js_msg","set_curve_dur",10000);
 					messnamed("Kog_Comb_Master_Vol_msg",1.000);
 					messnamed("Kog_Comb_Vol_Line_msg",1.000,0,0.000);
 					messnamed("Kog_Comb_SpectralGate_Thresh_msg",12.000);
@@ -142,6 +150,8 @@ function cue(v0,v1)
 					messnamed("Kog_Particles_Master_Vol_msg",0.000,60000.000);
 					messnamed("Kog_Particles_Thresh_msg","thresh",-22.000,-22.000);
 					messnamed("Kog_Particles_SpectralGate_Thresh_msg",3.000);
+					messnamed("Kog_Particles_Main_js_msg","set_blocking_dur",7000);
+					messnamed("Kog_Particles_js_msg","set_curve_dur",10000);
 					messnamed("Kog_Comb_Master_Vol_msg",1.000);
 					messnamed("Kog_Comb_Vol_Line_msg",1.000,0,0.000);
 					messnamed("Kog_Comb_SpectralGate_Thresh_msg",12.000);
@@ -167,6 +177,8 @@ function cue(v0,v1)
 					messnamed("Kog_Particles_Master_Vol_msg",0.000,60000.000);
 					messnamed("Kog_Particles_Thresh_msg","thresh",0.000,0.000);
 					messnamed("Kog_Particles_SpectralGate_Thresh_msg",3.000);
+					messnamed("Kog_Particles_Main_js_msg","set_blocking_dur",7000);
+					messnamed("Kog_Particles_js_msg","set_curve_dur",10000);
 					messnamed("Kog_Comb_Master_Vol_msg",1.000);
 					messnamed("Kog_Comb_Vol_Line_msg",1.000,0,0.000);
 					messnamed("Kog_Comb_SpectralGate_Thresh_msg",12.000);
@@ -200,6 +212,8 @@ function cue(v0,v1)
 					messnamed("Kog_Particles_Master_Vol_msg",0.000,60000.000);
 					messnamed("Kog_Particles_Thresh_msg","thresh",0.000,0.000);
 					messnamed("Kog_Particles_SpectralGate_Thresh_msg",3.000);
+					messnamed("Kog_Particles_Main_js_msg","set_blocking_dur",7000);
+					messnamed("Kog_Particles_js_msg","set_curve_dur",10000);
 					messnamed("Kog_Comb_Master_Vol_msg",1.000);
 					messnamed("Kog_Comb_Vol_Line_msg",1.000,0,0.000);
 					messnamed("Kog_Comb_SpectralGate_Thresh_msg",6.000);
@@ -227,6 +241,8 @@ function cue(v0,v1)
 					messnamed("Kog_Particles_Master_Vol_msg",0.000,60000.000);
 					messnamed("Kog_Particles_Thresh_msg","thresh",0.000,0.000);
 					messnamed("Kog_Particles_SpectralGate_Thresh_msg",3.000);
+					messnamed("Kog_Particles_Main_js_msg","set_blocking_dur",7000);
+					messnamed("Kog_Particles_js_msg","set_curve_dur",10000);
 					messnamed("Kog_Comb_Master_Vol_msg",1.000);
 					messnamed("Kog_Comb_Vol_Line_msg",1.000,0,0.000);
 					messnamed("Kog_Comb_SpectralGate_Thresh_msg",6.000);
@@ -251,9 +267,11 @@ function cue(v0,v1)
 					outlet(0,"set_autobang",autobang);
 					var s = 1000. * 0.750;
 					messnamed("Kog_Particles_Main_js_msg","max_active",2);
-					messnamed("Kog_Particles_Master_Vol_msg",0.500,40000.000);
+					messnamed("Kog_Particles_Master_Vol_msg",0.400,10000.000);
 					messnamed("Kog_Particles_Thresh_msg","thresh",-22.000,-22.000);
 					messnamed("Kog_Particles_SpectralGate_Thresh_msg",3.000);
+					messnamed("Kog_Particles_Main_js_msg","set_blocking_dur",4000);
+					messnamed("Kog_Particles_js_msg","set_curve_dur",6000);
 					messnamed("Kog_Comb_Master_Vol_msg",1.000);
 					messnamed("Kog_Comb_Vol_Line_msg",1.000,0,0.000);
 					messnamed("Kog_Comb_SpectralGate_Thresh_msg",6.000);
@@ -278,9 +296,11 @@ function cue(v0,v1)
 					outlet(0,"set_autobang",autobang);
 					var s = 1000. * 0.750;
 					messnamed("Kog_Particles_Main_js_msg","max_active",2);
-					messnamed("Kog_Particles_Master_Vol_msg",0.500,40000.000);
+					messnamed("Kog_Particles_Master_Vol_msg",0.400,10000.000);
 					messnamed("Kog_Particles_Thresh_msg","thresh",-22.000,-22.000);
 					messnamed("Kog_Particles_SpectralGate_Thresh_msg",3.000);
+					messnamed("Kog_Particles_Main_js_msg","set_blocking_dur",4000);
+					messnamed("Kog_Particles_js_msg","set_curve_dur",6000);
 					messnamed("Kog_Comb_Master_Vol_msg",1.000);
 					messnamed("Kog_Comb_Vol_Line_msg",1.000,0,0.000);
 					messnamed("Kog_Comb_SpectralGate_Thresh_msg",6.000);
@@ -316,6 +336,8 @@ function cue(v0,v1)
 					messnamed("Kog_Particles_Master_Vol_msg",0.000,20000.000);
 					messnamed("Kog_Particles_Thresh_msg","thresh",0.000,0.000);
 					messnamed("Kog_Particles_SpectralGate_Thresh_msg",3.000);
+					messnamed("Kog_Particles_Main_js_msg","set_blocking_dur",4000);
+					messnamed("Kog_Particles_js_msg","set_curve_dur",6000);
 					messnamed("Kog_Comb_Master_Vol_msg",1.000);
 					messnamed("Kog_Comb_Vol_Line_msg",1.000,0,0.000);
 					messnamed("Kog_Comb_SpectralGate_Thresh_msg",3.000);
@@ -341,6 +363,8 @@ function cue(v0,v1)
 					messnamed("Kog_Particles_Master_Vol_msg",0.000,20000.000);
 					messnamed("Kog_Particles_Thresh_msg","thresh",0.000,0.000);
 					messnamed("Kog_Particles_SpectralGate_Thresh_msg",3.000);
+					messnamed("Kog_Particles_Main_js_msg","set_blocking_dur",4000);
+					messnamed("Kog_Particles_js_msg","set_curve_dur",6000);
 					messnamed("Kog_Comb_Master_Vol_msg",1.000);
 					messnamed("Kog_Comb_Vol_Line_msg",1.000,0,0.000);
 					messnamed("Kog_Comb_SpectralGate_Thresh_msg",3.000);
@@ -374,6 +398,8 @@ function cue(v0,v1)
 					messnamed("Kog_Particles_Master_Vol_msg",0.000,20000.000);
 					messnamed("Kog_Particles_Thresh_msg","thresh",0.000,0.000);
 					messnamed("Kog_Particles_SpectralGate_Thresh_msg",3.000);
+					messnamed("Kog_Particles_Main_js_msg","set_blocking_dur",4000);
+					messnamed("Kog_Particles_js_msg","set_curve_dur",6000);
 					messnamed("Kog_Comb_Master_Vol_msg",1.000);
 					messnamed("Kog_Comb_Vol_Line_msg",0.000,30000,-0.500);
 					messnamed("Kog_Comb_SpectralGate_Thresh_msg",3.000);

@@ -641,12 +641,12 @@
 					"fontname" : "Arial",
 					"fontsize" : 12.0,
 					"id" : "obj-31",
-					"linecount" : 2,
+					"linecount" : 3,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 908.0, 136.0, 150.0, 34.0 ],
-					"text" : "for regenerating Kog_Comb_Score.js file"
+					"patching_rect" : [ 908.0, 136.0, 150.0, 48.0 ],
+					"text" : "for regenerating Kog_Comb_Score.js file\nfrom Kogarashi Score.csv"
 				}
 
 			}

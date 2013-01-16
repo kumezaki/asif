@@ -44,6 +44,15 @@ function set_buf_dur(v)
 	gDur_Buf = v;	
 }
 
+function set_curve_dur(v)
+{
+	post("set_curve_dur("+v+")\n");
+
+	gDur_VolCurve = v;
+	gDur_DelCurve = v;
+	gDur_DurCurve = v;
+}
+
 function set_buf_id(v)
 {
 	gID = v;

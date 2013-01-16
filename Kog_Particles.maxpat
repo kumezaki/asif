@@ -28,6 +28,20 @@
 				"box" : 				{
 					"fontname" : "Arial",
 					"fontsize" : 12.0,
+					"id" : "obj-47",
+					"maxclass" : "newobj",
+					"numinlets" : 0,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 510.0, 507.0, 137.0, 20.0 ],
+					"text" : "r Kog_Particles_js_msg"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontname" : "Arial",
+					"fontsize" : 12.0,
 					"id" : "obj-66",
 					"maxclass" : "message",
 					"numinlets" : 2,
@@ -155,7 +169,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 505.0, 626.0, 49.0, 20.0 ],
+					"patching_rect" : [ 505.0, 654.0, 49.0, 20.0 ],
 					"text" : "playing"
 				}
 
@@ -294,7 +308,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 526.0, 573.0, 137.0, 20.0 ],
+					"patching_rect" : [ 526.0, 601.0, 137.0, 20.0 ],
 					"text" : "loadmess set_buf_id #1"
 				}
 
@@ -306,7 +320,7 @@
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 486.0, 649.0, 25.0, 25.0 ]
+					"patching_rect" : [ 486.0, 677.0, 25.0, 25.0 ]
 				}
 
 			}
@@ -317,7 +331,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "int" ],
-					"patching_rect" : [ 486.0, 626.0, 20.0, 20.0 ]
+					"patching_rect" : [ 486.0, 654.0, 20.0, 20.0 ]
 				}
 
 			}
@@ -330,7 +344,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "int", "bang" ],
-					"patching_rect" : [ 514.0, 508.0, 50.0, 20.0 ]
+					"patching_rect" : [ 514.0, 536.0, 50.0, 20.0 ]
 				}
 
 			}
@@ -343,7 +357,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 514.0, 532.0, 91.0, 18.0 ],
+					"patching_rect" : [ 514.0, 560.0, 91.0, 18.0 ],
 					"text" : "set_buf_dur $1"
 				}
 
@@ -632,7 +646,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 439.0, 533.0, 44.0, 18.0 ],
+					"patching_rect" : [ 439.0, 561.0, 44.0, 18.0 ],
 					"text" : "auto 1"
 				}
 
@@ -646,7 +660,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 393.0, 533.0, 44.0, 18.0 ],
+					"patching_rect" : [ 393.0, 561.0, 44.0, 18.0 ],
 					"text" : "auto 0"
 				}
 
@@ -865,7 +879,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 486.0, 602.0, 109.0, 20.0 ],
+					"patching_rect" : [ 486.0, 630.0, 109.0, 20.0 ],
 					"text" : "js Kog_Particles.js"
 				}
 
@@ -1328,6 +1342,15 @@
 					"hidden" : 0,
 					"midpoints" : [  ],
 					"source" : [ "obj-46", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-69", 0 ],
+					"hidden" : 0,
+					"midpoints" : [  ],
+					"source" : [ "obj-47", 0 ]
 				}
 
 			}
