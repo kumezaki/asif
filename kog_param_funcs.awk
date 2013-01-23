@@ -90,6 +90,13 @@ function do_part_curvedur(v,p)
 	printf "messnamed(\"Kog_Particles_js_msg\",\"set_curve_dur\",%d);\n",p
 }
 
+function do_part_curvedelay(v,p)
+{
+	split(p,a,"/")
+	indent(v)
+	printf "messnamed(\"Kog_Particles_js_msg\",\"set_curve_delay\",%0.3f,%0.3f,%0.3f);\n",a[1],a[2],a[3]
+}
+
 function do_comb_mastervol(v,p)
 {
 	indent(v)

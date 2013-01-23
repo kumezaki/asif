@@ -4,8 +4,9 @@ var gNum_Voices = 5;
 var gArray_Voices = new Array();
 
 var gDur_Buf = 8000;
+var gDur_Rec;
 
-var gDur_RecTask;
+var gDur_RecEndTask;
 var gDur_RecLine_On;
 var gDur_RecLine_Off;
 
@@ -51,6 +52,16 @@ function set_curve_dur(v)
 	gDur_VolCurve = v;
 	gDur_DelCurve = v;
 	gDur_DurCurve = v;
+}
+
+function set_curve_delay(v0,v1,v2)
+{
+	post("set_curve_delay("+v0+","+v1+","+v2+")\n");
+	post(gDur_VolCurve*v0,gDur_DelCurve*v1,gDur_DurCurve*v2,"\n");
+
+	gDur_Delay_VolCurveStart = gDur_VolCurve * v0;
+	gDur_Delay_DelCurveStart = gDur_DelCurve * v1;
+	gDur_Delay_DurCurveStart = gDur_DurCurve * v2;
 }
 
 function set_buf_id(v)
@@ -102,13 +113,13 @@ function reset()
 {
 	delete gArray_Voices; gArray_Voices = new Array();
 	
-	gDur_RecTask = gDur_Buf * 0.74;
+	gDur_RecEndTask = gDur_Buf * 0.75; /* inclusive of gDur_RecLine_On */
 	gDur_RecLine_On = gDur_Buf * 0.01;
 	gDur_RecLine_Off = gDur_Buf * 0.25;
 
-	gDur_Delay_VolCurveStart = gDur_Buf * 0.00;
-	gDur_Delay_DelCurveStart = gDur_Buf * 0.00;
-	gDur_Delay_DurCurveStart = gDur_Buf * 1.00;
+	gDur_Delay_VolCurveStart = gDur_VolCurve * 0.00;
+	gDur_Delay_DelCurveStart = gDur_DelCurve * 0.00;
+	gDur_Delay_DurCurveStart = gDur_DurCurve * 1.00; /* adjust multiplier depending on duration of curve */
 
 	messnamed(gBuf_msg,"size",gDur_Buf);
 	messnamed(gBuf_msg,"clear");
@@ -208,14 +219,14 @@ function task_func()
 
 	gArray_Voices[i].pos_play += gArray_Voices[i].dur;
 
-	if (gArray_Voices[i].pos_play < gDur_Buf)
+	if (gArray_Voices[i].pos_play < gDur_Rec)
 	{
 		gArray_Voices[i].task.schedule(gArray_Voices[i].dur + gArray_Voices[i].del);
 	}
 	else
 	{
 		var start = gArray_Voices[i].pos_play - gArray_Voices[i].dur;
-		var dur = gDur_Buf - start;
+		var dur = gDur_Rec - start;
 		post("last play segment for",i,start,gArray_Voices[i].dur,gArray_Voices[i].pos_play,dur,"\n");
 		gArray_Voices[i].task.arguments[1] = -1;
 		gArray_Voices[i].task.schedule(dur);
@@ -225,11 +236,52 @@ function task_func()
 
 /*===========================================================================*/
 
-var task_rec = new Task(rec_func);
+var gBool_Thresh = false;
 
-var task_vol_curve_start = new Task(start_vol_curve);
-var task_del_curve_start = new Task(start_del_curve);
-var task_dur_curve_start = new Task(start_dur_curve);
+function thresh(v)
+{
+	if (v)	/* ABOVE THRESH */
+	{
+		if (gBool_RecStandby)
+			auto(1); /* start recording/playback */
+
+		/* zero to non-zero transition */
+		if (!gBool_Thresh)
+		{
+			if (gTask_RecStop.running)
+				gTask_RecStop.cancel();
+		}
+	}
+	else	/* BELOW THRESH */
+	{
+		/* non-zero to zero transition */
+		if (gBool_Thresh)
+		{
+			if (gTask_RecEnd.running)
+			{
+				gTask_RecStop.cancel();
+				gTask_RecStop.schedule(gDur_RecStopTask);
+			}
+		}
+	}
+	
+	gBool_Thresh = v;
+}
+
+
+/*===========================================================================*/
+
+var gTask_RecEnd = new Task(rec_end);
+
+var gBool_RecStandby = false;
+
+var gDur_RecStopTask = 1000;
+var gTask_RecStop = new Task(rec_stop);
+
+/* for initial delay before curve starts */
+var gTask_VolCurveStart = new Task(start_vol_curve);
+var gTask_DelCurveStart = new Task(start_del_curve);
+var gTask_DurCurveStart = new Task(start_dur_curve);
 
 function auto(rec)
 {
@@ -239,22 +291,55 @@ function auto(rec)
 
 	play();
 
-	task_vol_curve_start.schedule(gDur_Delay_VolCurveStart);
-	task_del_curve_start.schedule(gDur_Delay_DelCurveStart);
-	task_dur_curve_start.schedule(gDur_Delay_DurCurveStart);
+	gTask_VolCurveStart.schedule(gDur_Delay_VolCurveStart);
+	gTask_DelCurveStart.schedule(gDur_Delay_DelCurveStart);
+	gTask_DurCurveStart.schedule(gDur_Delay_DurCurveStart);
 
 	if (rec)
 	{
-		rec_func(1);
-		task_rec.arguments[0] = 0;
-		task_rec.schedule(gDur_RecTask);
+		rec_start();
+		gTask_RecEnd.schedule(gDur_RecEndTask);
 	}
 }
 
-function rec_func()
+function rec_standby(v)
 {
-	var on = arguments[0];
-	if (on)
-		messnamed(gRec_msg,1);
-	messnamed(gRecLine_msg,on,on?gDur_RecLine_On:gDur_RecLine_Off,on?0.:-0.5);
+	if (!gBool_RecStandby && v)	/* zero to non-zero transition */
+		if (gBool_Thresh)
+			auto(1); /* start recording/playback */
+
+	gBool_RecStandby = v;
+}
+
+function rec_start()
+{
+	messnamed(gRec_msg,"clear");
+
+	gDur_Rec = gDur_Buf;
+
+	gTime_Start = max.time;
+
+	messnamed(gRecLine_msg,1,gDur_RecLine_On,0.0);
+}
+
+function rec_end()
+{
+	post("REC DUR (rec_end)\n");
+
+	if (gTask_RecStop.running)
+		gTask_RecStop.cancel();
+
+	messnamed(gRecLine_msg,0,gDur_RecLine_Off,-0.5);
+}
+
+function rec_stop()	/* force stop recording */
+{
+	post("REC DUR (rec_stop)",max.time-gTime_Start,"\n");
+
+	if (gTask_RecEnd.running)
+		gTask_RecEnd.cancel();
+	
+	gDur_Rec = max.time-gTime_Start;
+
+	messnamed(gRecLine_msg,0,0,0);
 }
