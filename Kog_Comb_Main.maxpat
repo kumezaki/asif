@@ -1087,7 +1087,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 80.0, 327.0, 265.0, 32.0 ],
-					"text" : "cue 3 2"
+					"text" : "cue 2 3"
 				}
 
 			}
